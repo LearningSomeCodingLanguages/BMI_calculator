@@ -10,7 +10,7 @@
 <input type="number" id="weight" placeholder="Enter your weight">
 <button onclick="calculateBMI()">Your BMI</button>
 <p>Your BMI is: <span id="BMI"></span></p>
-<p> Which means: <span id=meaning></p></p>  
+<p> Which means: <span id=meaning></span></p>  
 <script>
   function calculateBMI() {
   // Get the Values from input fields
@@ -23,7 +23,8 @@
   // Display the result
   document.getElementById('BMI').textContent = BMI;
   }
-  
+
+  //Calculate the BMI
   if (BMI < 18.5) {
     meaning = "You're under weight.";
   } else if (BMI < 25) {
@@ -33,8 +34,10 @@
   }
   else {
     meaning = "You're Obese";
+  }
   document.getElementByID(meaning).textContent = meaning;
   }
+  
   
 </script>
 </body>
