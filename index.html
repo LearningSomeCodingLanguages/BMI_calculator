@@ -5,12 +5,12 @@
 <title>BMI Calculator</title>
 </head>
 <body>
-<h2>Calculate your BMI</h2>
+<h2>Calculate your BMI - by Kevin Alcaraz</h2>
 <input type="number" id="height" placeholder="Enter your height">
 <input type="number" id="weight" placeholder="Enter your weight">
 <button onclick="calculateBMI()">Your BMI</button>
 <p>Your BMI is: <span id="BMI"></span></p>
-<p> Which means: <span id="meaning"></span></p>  
+<p>Which means: <span id="meaning"></span></p>  
 <script>
   function calculateBMI() {
   // Get the Values from input fields
@@ -31,6 +31,7 @@
   
   // Displaying the BMI and BMI meaning
   document.getElementByID('meaning').textContent = 'meaning';
+  }
   document.getElementById('BMI').textContent = BMI;
   }
   
