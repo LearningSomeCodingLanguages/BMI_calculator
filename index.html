@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI Calculator</title>
+</head>
+<body>
+<h2>Calculate your BMI</h2>
+<input type="number" id="height" placeholder="Enter your height">
+<input type="number" id="weight" placeholder="Enter your weight">
+<button onclick="calculateBMI()">Your BMI</button>
+<p>Result: <span id="BMI"></span></p>
+  
+<script>
+function calculateBMI() {
+// Get the Values from input fields
+let height = parseFloat(document.getElementById('height').value);
+let weight = parseFloat(document.getElementById('weight').value);
+
+// Calculate the BMI
+let BMI = (weight/(height*height))*703;
+
+// Display the result
+document.getElementById('BMI').textContent = BMI;
+}
+
+</script>
+</body>
+</html>
